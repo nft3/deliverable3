@@ -25,12 +25,12 @@ public class TestWebDriver {
     }
 
     @Test
-    public void setupWebDriver(){
+    public void checkGithubTitle(){
 
         // Navigate to Google just to test
-        driver.navigate().to("https://www.google.com");
+        driver.navigate().to("https://www.github.com");
 
         // Test if the title of the google.com is, in fact, "Google"
-        Assert.assertEquals("Google", driver.getTitle());
+        Assert.assertEquals("GitHub · Where software is built", driver.getTitle());
     }
 }
