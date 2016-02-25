@@ -1,6 +1,6 @@
 package com.testing;
 
-import junit.framework.Assert;
+import static org.junit.Assert.*;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -31,6 +31,6 @@ public class TestWebDriver {
         driver.navigate().to("https://www.github.com");
 
         // Test if the title of the google.com is, in fact, "Google"
-        Assert.assertEquals("GitHub · Where software is built", driver.getTitle());
+        assertEquals("GitHub · Where software is built", driver.getTitle());
     }
 }
