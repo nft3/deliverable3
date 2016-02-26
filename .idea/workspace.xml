@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26559a19-13fc-4e68-bee3-531629be58bf" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/testing/RedditFrontPageTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/testing/RedditLoggedInTester.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/testing/TestWebDriver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/testing/TestWebDriver.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/testing/TestWebDriver.java" afterPath="$PROJECT_DIR$/src/test/java/com/testing/TestWebDriver.java" />
     </list>
     <ignored path="CS1632Deliverable3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,17 +39,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestWebDriver.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/testing/TestWebDriver.java">
+      <file leaf-file-name="RedditFrontPageTester.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/testing/RedditFrontPageTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85973597">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state vertical-scroll-proportion="-0.05610561">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+              <folding>
+                <element signature="e#851#852#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#922#923#0" expanded="true" />
+                <element signature="e#985#986#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedditLoggedInTester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/testing/RedditLoggedInTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="53" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
+                <element signature="e#1225#1226#0" expanded="true" />
+                <element signature="e#1255#1256#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +95,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/testing/TestWebDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/testing/RedditTester.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/testing/RedditLoggedInTester.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/testing/RedditFrontPageTester.java" />
       </list>
     </option>
   </component>
@@ -193,8 +212,8 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="JUnit.TestWebDriver">
-    <configuration default="false" name="TestWebDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RedditLoggedInTester.testOpenLinksInNewWindow">
+    <configuration default="false" name="RedditTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.testing.*" />
@@ -205,9 +224,113 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.testing" />
-      <option name="MAIN_CLASS_NAME" value="com.testing.TestWebDriver" />
+      <option name="MAIN_CLASS_NAME" value="com.testing.RedditTester" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedditTester.testNewClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS1632Deliverable3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.testing.RedditTester" />
+      <option name="METHOD_NAME" value="testNewClick" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedditTester.testForwardButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS1632Deliverable3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.testing.RedditTester" />
+      <option name="METHOD_NAME" value="testForwardButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedditLoggedInTester.testOpenLinksInNewWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS1632Deliverable3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.testing.RedditLoggedInTester" />
+      <option name="METHOD_NAME" value="testOpenLinksInNewWindow" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedditLoggedInTester.navigateToPreferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CS1632Deliverable3" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.testing.RedditLoggedInTester" />
+      <option name="METHOD_NAME" value="navigateToPreferences" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -476,12 +599,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestWebDriver" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.RedditTester" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RedditTester.testNewClick" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RedditTester.testForwardButton" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RedditLoggedInTester.testOpenLinksInNewWindow" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RedditLoggedInTester.navigateToPreferences" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestWebDriver" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RedditLoggedInTester.testOpenLinksInNewWindow" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RedditLoggedInTester.navigateToPreferences" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RedditTester" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RedditTester.testForwardButton" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RedditTester.testNewClick" />
       </list>
     </recent_temporary>
   </component>
@@ -514,39 +645,45 @@
       <option name="project" value="LOCAL" />
       <updated>1456437310083</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made Github instead of Google">
+      <created>1456437543725</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1456437543725</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestWebDriver - 2016.02.25 at 14h 21m 23s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_navigateToPreferences - 2016.02.25 at 21h 52m 47s.xml">
+      <configuration name="RedditLoggedInTester.navigateToPreferences" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 14h 22m 42s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_navigateToPreferences - 2016.02.25 at 21h 53m 31s.xml">
+      <configuration name="RedditLoggedInTester.navigateToPreferences" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 14h 26m 36s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_navigateToPreferences - 2016.02.25 at 21h 56m 30s.xml">
+      <configuration name="RedditLoggedInTester.navigateToPreferences" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 14h 27m 27s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_testOpenLinksInNewWindow - 2016.02.25 at 21h 49m 37s.xml">
+      <configuration name="RedditLoggedInTester.testOpenLinksInNewWindow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 14h 31m 25s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_testOpenLinksInNewWindow - 2016.02.25 at 21h 50m 06s.xml">
+      <configuration name="RedditLoggedInTester.testOpenLinksInNewWindow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 15h 06m 34s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_testOpenLinksInNewWindow - 2016.02.25 at 21h 50m 42s.xml">
+      <configuration name="RedditLoggedInTester.testOpenLinksInNewWindow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 15h 07m 44s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_testOpenLinksInNewWindow - 2016.02.25 at 22h 07m 20s.xml">
+      <configuration name="RedditLoggedInTester.testOpenLinksInNewWindow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 15h 59m 02s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_testOpenLinksInNewWindow - 2016.02.25 at 22h 10m 50s.xml">
+      <configuration name="RedditLoggedInTester.testOpenLinksInNewWindow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 16h 13m 45s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_testOpenLinksInNewWindow - 2016.02.25 at 22h 14m 46s.xml">
+      <configuration name="RedditLoggedInTester.testOpenLinksInNewWindow" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestWebDriver - 2016.02.25 at 16h 22m 43s.xml">
-      <configuration name="TestWebDriver" configurationId="JUnit" />
+    <history-entry file="RedditLoggedInTester_testOpenLinksInNewWindow - 2016.02.25 at 22h 19m 38s.xml">
+      <configuration name="RedditLoggedInTester.testOpenLinksInNewWindow" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -557,13 +694,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2429022" sideWeight="0.50292826" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32018927" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2429022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26971608" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16837482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -586,7 +723,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Made Github instead of Google" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -602,16 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/com/testing/TestWebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
@@ -620,16 +749,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/testing/TestWebDriver.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85973597">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#1173#1174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/testing/RedditLoggedInTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="53" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/testing/RedditFrontPageTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.05610561">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding>
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
           </folding>
         </state>
       </provider>
