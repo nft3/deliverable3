@@ -147,13 +147,15 @@ public class RedditFrontPageTester {
     public void testForwardButton(){
         WebElement buttonClick = driver.findElement(By.linkText("wiki"));
         buttonClick.click();
-        System.out.println(driver.getTitle());
         String wikiTitle = driver.getTitle();
         if(driver.getTitle().equals("index - reddit.com")){
             driver.navigate().back();
             if(getFrontPageTitle().equals(driver.getTitle())){
                 driver.navigate().forward();
                 assertEquals(wikiTitle, driver.getTitle());
+            }
+            else {
+                fail();
             }
         }
         else {
