@@ -31,6 +31,7 @@ public class RedditFrontPageTester {
     // Close any connections that we have opened doing our tests.
     public void tearDown() {
         driver.close();
+        driver.quit();
     }
 
     private String getFrontPageTitle(){
@@ -87,14 +88,20 @@ public class RedditFrontPageTester {
         WebElement login = driver.findElement(By.id("login_login-main"));
         login.findElement(By.className("btn")).click();
 
-        try{
+        // Try to find the logout button on the page, if there isn't one there we haven't logged in
+        try {
+            // We need to get some headers to drill into the HTML so we can see if the logout button exists
             WebElement header = driver.findElement(By.id("header"));
-            System.out.println("header passed");
             WebElement headerRight = header.findElement(By.id("header-bottom-right"));
-            System.out.println("headerRight passed");
-            WebElement logout = driver.findElement(By.cssSelector("form.logout.hover"));
-            System.out.println("logout passed");
-            assertTrue(logout.isDisplayed());
+            /**
+                Had a conversation with professor Laboon as to why Selenium doesn't see "logout hover" as an element.
+                he told me that it is sufficient to just check the header above to see if it is displayed for this test
+             */
+
+            // If it is there, we have successfully logged in
+            assertTrue(headerRight.isDisplayed());
+
+        // If we encountered a NoSuchElementException, then there is not logout button and we have failed to log in
         } catch (NoSuchElementException e){
             fail();
         }
