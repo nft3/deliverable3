@@ -132,12 +132,16 @@ public class RedditLoggedInTester {
         Then I want to explore App documentation
         When I click the click to the Reddit API Access.
      */
-    public void testAppDeveloperAPILink(){
-        driver.findElement(By.linkText("preferences")).click();
-        driver.findElement(By.linkText("apps")).click();
-        driver.findElement(By.id("create-app-button")).click();
-        driver.findElement(By.linkText("read the API usage guidelines")).click();
-        assertEquals(getCurrentURL(), "https://www.reddit.com/wiki/api");
+    public void testAppDeveloperAPILink() {
+        try {
+            driver.findElement(By.linkText("preferences")).click();
+            driver.findElement(By.linkText("apps")).click();
+            driver.findElement(By.id("create-app-button")).click();
+            driver.findElement(By.linkText("read the API usage guidelines")).click();
+            assertEquals(getCurrentURL(), "https://www.reddit.com/wiki/api");
+        } catch (NoSuchElementException e){
+            fail();
+        }
     }
 
     @Test
